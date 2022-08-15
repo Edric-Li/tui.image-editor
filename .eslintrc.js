@@ -17,7 +17,7 @@ module.exports = {
       rootMode: 'upward',
     },
   },
-  ignorePatterns: ['node_modules/*', 'dist', 'examples'],
+  ignorePatterns: ['*', 'dist', 'examples'],
   rules: {
     'prefer-destructuring': [
       'error',

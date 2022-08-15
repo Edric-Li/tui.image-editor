@@ -36,7 +36,7 @@ export default ({ locale, makeSvgIcon }) => `
         <li class="tui-image-editor-newline tui-image-editor-range-wrap">
             <label class="range">${locale.localize('Range')}</label>
             <div class="tie-draw-range"></div>
-            <input class="tie-draw-range-value tui-image-editor-range-value" value="0" />
+            <input class="tie-draw-range-value tui-image-editor-range-value" value="0" type="number" />
         </li>
     </ul>
 `;

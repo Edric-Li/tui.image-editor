@@ -1444,9 +1444,10 @@ class ImageEditor {
    * imageEditor.removeObject(id);
    */
   removeObject(id) {
-    const { type } = this._graphics.getObject(id);
-
-    return this.execute(commands.REMOVE_OBJECT, id, getObjectType(type));
+    if (id) {
+      const {type} = this._graphics.getObject(id);
+      return this.execute(commands.REMOVE_OBJECT, id, getObjectType(type));
+    }
   }
 
   /**

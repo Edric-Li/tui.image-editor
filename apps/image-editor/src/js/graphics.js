@@ -333,6 +333,11 @@ class Graphics {
    */
   getActiveObjectIdForRemove() {
     const activeObject = this.getActiveObject();
+
+    if(!activeObject){
+      return undefined;
+    }
+
     const { type, left, top } = activeObject;
     const isSelection = type === 'activeSelection';
 

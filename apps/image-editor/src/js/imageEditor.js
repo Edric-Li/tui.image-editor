@@ -1444,7 +1444,7 @@ class ImageEditor {
    * imageEditor.removeObject(id);
    */
   removeObject(id) {
-    if (id) {
+    if (id !== undefined && id !== null) {
       const {type} = this._graphics.getObject(id);
       return this.execute(commands.REMOVE_OBJECT, id, getObjectType(type));
     }
